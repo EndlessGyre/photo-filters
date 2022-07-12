@@ -5,9 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="./js/simpleImage.js"></script>
+    <script src="./js/filters.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <h1>FUN WITH FILTERS</h1>
+    <p>This fun tool lets you transform pictures into other pictures using filters.</p><p> Rest easy -- our algorithms do the hard work!</p>
+    <canvas id="canv">
+    </canvas>
+    <p>Load Image:
+    <input type="file" multiple="false" accept="image/*" id="finput" onchange="fupload()">
+    <p id="dimensions"></p>
+    <p>Filters:
+    <input type="button" value="Drain Me" onclick="makeGray()">
+    <input type="button" value="Fade Me" onclick="makeDull()">
+      <input type="button" value="Scramble Me" onclick="scramble()">
+    <input type="button" value="Rainbow Me" onclick="rainbow()">
+           </p>
+    <p>And More Filters:
+      <input type="button" value="Blue Shift" onclick="blueShift()">
+      <input type="button" value="Two-Bit" onclick="twobit()">
+      <input type="button" value="Carpenter-ize" onclick="obey()">
+      </p>
+    <p><input type="button" value="RESET" onclick="reset()">
+    </p>
+    <p></p>
+    <input type="button" value="Clear Canvas" onclick="clearCanvas()">
+  
 </body>
 </html>
